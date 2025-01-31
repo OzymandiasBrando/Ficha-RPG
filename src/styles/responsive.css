@@ -1,0 +1,47 @@
+/* Tablet styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .attributes, .skills, .macros {
+    padding: 15px;
+  }
+
+  .macro {
+    padding: 15px;
+  }
+
+  .dice-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #saved-macros .macro {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+  .attributes, .skills, .macros {
+    padding: 10px;
+  }
+
+  .macro {
+    padding: 10px;
+  }
+
+  .dice-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  #saved-macros .macro {
+    flex: 1 1 100%;
+  }
+}

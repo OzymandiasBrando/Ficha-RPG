@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="src/styles/styles.css">
+  <link rel="stylesheet" href="src/styles/responsive.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="attributes">
+      <h2>Atributos</h2>
+      <label>Força: <input type="number" id="strength" value="0"></label>
+      <label>Agilidade: <input type="number" id="agility" value="0"></label>
+      <label>Intelecto: <input type="number" id="intellect" value="0"></label>
+      <label>Vigor: <input type="number" id="stamina" value="0"></label>
+      <label>Presença: <input type="number" id="presence" value="0"></label>
+    </div>
+
+    <div class="skills">
+      <h2>Habilidades</h2>
+      <div class="skill">
+        <label>"Acrobacia (Agi): 
+          <select id="acrobatics">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*Adestramento (Pre): 
+          <select id="training">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*Artes (Pre): 
+          <select id="arts">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Atletismo (For): 
+          <select id="athletics">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*Botânica (Int): 
+          <select id="botany">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*Ciências (Int): 
+          <select id="sciences">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*"Crimes (Agi): 
+          <select id="crimes">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>+Enganação (Pre): 
+          <select id="deception">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Fortitude (Vig): 
+          <select id="fortitude">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>"Furtividade (Agi): 
+          <select id="stealth">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Luta (For): 
+          <select id="fight">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Iniciativa (Agi): 
+          <select id="initiative">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Intimidação (Pre): 
+          <select id="intimidation">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Intuição (Pre): 
+          <select id="intuition">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Investigação (Int): 
+          <select id="investigation">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>+Medicina (Int): 
+          <select id="medicine">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*Ocultismo (Int): 
+          <select id="occultism">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Overdose (Vig): 
+          <select id="overdose">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*Pilotagem (Agi): 
+          <select id="piloting">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Pontaria (Agi): 
+          <select id="marksmanship">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*Profissão - ??? (Int): 
+          <select id="profession">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Religião (Pre): 
+          <select id="religion">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Sobrevivência (Int): 
+          <select id="survival">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*Tática (Int): 
+          <select id="tactics">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>*+Tecnologia (Int): 
+          <select id="technology">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Vontade (Pre): 
+          <select id="will">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Atualidades (Int): 
+          <select id="current-affairs">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Diplomacia (Pre): 
+          <select id="diplomacy">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Percepção (Pre): 
+          <select id="perception">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+      <div class="skill">
+        <label>Reflexo (Agi): 
+          <select id="reflex">
+            <option value="0">Não Treinado (0)</option>
+            <option value="5">Treinado (+5)</option>
+            <option value="10">Especialista (+10)</option>
+            <option value="15">Veterano (+15)</option>
+            <option value="20">Perito (+20)</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="macros">
+      <div class="macro">
+        <h2>Macros</h2>
+        <label>Nome: <input type="text" id="macro-name"></label>
+        <label>Descrição: <textarea id="macro-description" placeholder="Descrição..."></textarea></label>
+        <label>Atributo: 
+          <select id="macro-attribute">
+            <option value="strength">Força</option>
+            <option value="agility">Agilidade</option>
+            <option value="intellect">Intelecto</option>
+            <option value="stamina">Vigor</option>
+            <option value="presence">Presença</option>
+          </select>
+        </label>
+        <label>Habilidade: 
+          <select id="macro-skill">
+            <option value="acrobatics">Acrobacia</option>
+            <option value="training">Adestramento</option>
+            <option value="arts">Artes</option>
+            <option value="athletics">Atletismo</option>
+            <option value="botany">Botânica</option>
+            <option value="sciences">Ciências</option>
+            <option value="crimes">Crimes</option>
+            <option value="deception">Enganação</option>
+            <option value="fortitude">Fortitude</option>
+            <option value="stealth">Furtividade</option>
+            <option value="fight">Luta</option>
+            <option value="initiative">Iniciativa</option>
+            <option value="intimidation">Intimidação</option>
+            <option value="intuition">Intuição</option>
+            <option value="investigation">Investigação</option>
+            <option value="medicine">Medicina</option>
+            <option value="occultism">Ocultismo</option>
+            <option value="overdose">Overdose</option>
+            <option value="piloting">Pilotagem</option>
+            <option value="marksmanship">Pontaria</option>
+            <option value="profession">Profissão</option>
+            <option value="religion">Religião</option>
+            <option value="survival">Sobrevivência</option>
+            <option value="tactics">Tática</option>
+            <option value="technology">Tecnologia</option>
+            <option value="will">Vontade</option>
+            <option value="current-affairs">Atualidades</option>
+            <option value="diplomacy">Diplomacia</option>
+            <option value="perception">Percepção</option>
+            <option value="reflex">Reflexo</option>
+          </select>
+        </label>
+        <button class="dice-button" onclick="createMacro()">Criar Macro</button>
+      </div>
+    </div>
+    <div id="saved-macros"></div>
+
+    <div id="results"></div>
+    <button onclick="saveAll()">Salvar Dados</button>
+    <button onclick="loadAll()">Carregar Dados</button>
+  </div>
+  <script src="src/script.js"></script>
+</body>
+</html>
